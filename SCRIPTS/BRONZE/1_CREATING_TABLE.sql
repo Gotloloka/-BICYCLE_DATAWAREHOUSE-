@@ -1,5 +1,7 @@
 -- This SQL script will create table that will bw linked to the Bronze SCHEMA 
 -- The DROP TABLE will delete the if this script is re-run again and create new table with empty info
+USE MASTER;
+USE bicycledata;
 DROP TABLE IF EXISTS bronze.brands; 
 CREATE TABLE bronze.brands (
 	brand_id INT PRIMARY KEY NOT NULL,
