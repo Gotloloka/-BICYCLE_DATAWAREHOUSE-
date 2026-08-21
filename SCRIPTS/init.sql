@@ -14,12 +14,13 @@ END
 ELSE
     BEGIN
         -- This block runs if the database does not exist
-        PRINT 'CREATING bicycledata database for this operation';
+        PRINT 'Creating BICYCLEDATA database for this operation';
         CREATE DATABASE bicycledata;
     END;
 GO
 USE bicycledata; -- call the database 
 GO
+PRINT ' CREATING SCHEMA HAS BEGIN';
 -- CREATING SCHEMAS TO LOAD DATA AND CLEAN 
 IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'bronze')
     BEGIN
@@ -38,3 +39,4 @@ IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'gold')
         EXEC('CREATE SCHEMA gold');
     END
 GO
+PRINT ' ALL SCHEMAS HAVE BEING CREATED'
