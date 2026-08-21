@@ -2,14 +2,18 @@ USE master; -- Opening the master for the database
 -- CREATING DATABASE TO LOAD DATA
 GO
 
+USE master; -- Opening the master for the database 
+-- CREATING DATABASE TO LOAD DATA
+GO
+
 -- Check if the database exists first
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'bicycledata ')
 BEGIN
     -- This block only runs if the database is found
-    PRINT 'Database found. Kicking out users and switching to SINGLE_USER mode...';
+    PRINT 'Database found. Kicking out users and switching to MULTI_USER mode...';
     
     ALTER DATABASE bicycledata 
-    SET SINGLE_USER 
+    SET  MULTI_USER
     WITH ROLLBACK IMMEDIATE;
 END
 ELSE
