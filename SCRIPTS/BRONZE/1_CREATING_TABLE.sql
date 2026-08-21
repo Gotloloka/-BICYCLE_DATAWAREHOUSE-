@@ -60,6 +60,7 @@ CREATE TABLE bronze.staffs (
 	first_name NVARCHAR(250),
 	last_name NVARCHAR(250),
 	email NVARCHAR(250),
+	phone NVARCHAR,
 	active INT,
 	store_id INT,
 	manager_id INT 
