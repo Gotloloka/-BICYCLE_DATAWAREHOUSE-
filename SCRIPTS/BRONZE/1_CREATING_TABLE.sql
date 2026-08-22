@@ -37,7 +37,7 @@ CREATE TABLE bronze.customers  (
 	customer_id INT PRIMARY KEY NOT NULL,
 	first_name NVARCHAR(250),
 	last_name NVARCHAR(250),
-	phone INT,
+	phone NVARCHAR(50),
 	email NVARCHAR(250),
 	street NVARCHAR(250),
 	city NVARCHAR(250),
@@ -88,5 +88,3 @@ CREATE TABLE bronze.products (
 	list_price FLOAT
 
 	);
-
-
