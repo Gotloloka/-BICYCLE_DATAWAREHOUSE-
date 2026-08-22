@@ -158,7 +158,4 @@ BEGIN
 			PRINT ' =============================================================================='
 	END CATCH
 END
-;
--- This will automically run the database and load data into bronze layer 
-Go 
-EXEC bronze.load_bronze
+
