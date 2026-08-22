@@ -7,7 +7,7 @@
 6. Run script!!!
 7. Any ERROR FOUND DURING running of this script contact me */
 
-CREATE PROCEDURE bronze.load_bronze AS
+CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
 	DECLARE @starttime DATETIME, @endtime DATETIME, @batchstarttime DATETIME, @batchendtime DATETIME;
 	BEGIN TRY
@@ -151,6 +151,23 @@ BEGIN
 		SET @endtime =  GETDATE();
 		PRINT '-----------------------------------------------------------------------------' ;
 
+			PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
+		SET @starttime = GETDATE();
+		PRINT ' Clearing off/ truncate any visible data on bronze.products'
+		TRUNCATE TABLE bronze.products;
+		PRINT ' loading data into bronze.products';
+		BULK INSERT bronze.products
+		FROM 'C:\Users\user\Downloads\file\products.csv'
+		WITH (
+			format = 'csv',
+			FIELDTERMINATOR = ',',
+			ROWTERMINATOR = '\n',
+			FIRSTROW = 2,
+			TABLOCK
+		);
+		SET @endtime =  GETDATE();
+		PRINT '-----------------------------------------------------------------------------' ;
+		PRINT'    ' 
 		PRINT ' =============================================================================='
 		PRINT ' LOADING BRONZE LAYER HAS COMPLETED'
 		PRINT ' ==============================================================================';
@@ -167,4 +184,3 @@ BEGIN
 			PRINT ' =============================================================================='
 	END CATCH
 END
-
