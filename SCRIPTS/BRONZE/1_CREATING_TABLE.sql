@@ -73,7 +73,7 @@ CREATE TABLE bronze.orders (
 	order_status INT,
 	order_date DATE,
 	require_date DATE,
-	shippped_date DATE,
+	shippped_date NVARCHAR(50),
 	store_id INT,
 	staff_id INT
 ); 
