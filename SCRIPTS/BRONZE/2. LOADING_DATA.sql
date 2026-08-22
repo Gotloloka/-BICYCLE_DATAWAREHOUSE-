@@ -1,3 +1,12 @@
+/*
+1. when run this script please note that it was run from my local computer.
+2. Download the dataset from this GitHub to your local machine 
+3. on  your computer copy the location path of the file 
+4. update the SCRIPT path on FROM 'c\....' to the one copied from your computer.
+5. update all the file path location on this SCRIPT
+6. Run script!!!
+7. Any ERROR FOUND DURING running of this script contact me */
+
 CREATE PROCEDURE bronze.load_bronze AS
 BEGIN
 	DECLARE @starttime DATETIME, @endtime DATETIME, @batchstarttime DATETIME, @batchendtime DATETIME;
