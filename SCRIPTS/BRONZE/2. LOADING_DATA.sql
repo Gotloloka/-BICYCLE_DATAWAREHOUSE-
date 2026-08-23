@@ -30,6 +30,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds'
 		PRINT '-----------------------------------------------------------------------------' ;
 
 		PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
@@ -47,6 +48,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------';
 
 		PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
@@ -65,6 +67,7 @@ BEGIN
 			keepnulls
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------'  ;
 
 		PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
@@ -82,6 +85,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------' ;
 
 		PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
@@ -99,6 +103,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------';
 		PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
 		SET @starttime = GETDATE();
@@ -115,6 +120,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------';
 
 		PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
@@ -132,7 +138,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
-
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------' ;
 			PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
 		SET @starttime = GETDATE();
@@ -149,6 +155,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------' ;
 
 			PRINT '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++' 
@@ -166,6 +173,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @endtime =  GETDATE();
+		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------' ;
 		PRINT'    ' 
 		PRINT ' =============================================================================='
