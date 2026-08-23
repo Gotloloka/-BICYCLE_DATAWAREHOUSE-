@@ -25,13 +25,13 @@ DROP TABLE IF EXISTS bronze.stores;
 CREATE TABLE bronze.stores (
 	store_id INT,
 	store_name NVARCHAR(250),
-	phone INT,
+	phone NVARCHAR(50),
 	email  NVARCHAR(250),
 	street NVARCHAR(250),
 	city   NVARCHAR(250),
-	states NVARCHAR(250),
+	states NVARCHAR(250)
 	zip_code INT
-);
+	);
 DROP TABLE IF EXISTS bronze.customers;
 CREATE TABLE bronze.customers  (
 	customer_id INT PRIMARY KEY NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE bronze.staffs (
 	first_name NVARCHAR(250),
 	last_name NVARCHAR(250),
 	email NVARCHAR(250),
-	phone NVARCHAR,
+	phone NVARCHAR(50),
 	active INT,
 	store_id INT,
 	manager_id INT 
