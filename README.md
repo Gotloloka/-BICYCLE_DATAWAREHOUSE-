@@ -27,7 +27,8 @@ The data architecture for this project follows medallion Architecture Bronze, Si
 ---
 ## 🖧🛢 Data flow 
 The data flow of the file from raw data into an insights data  
-<img width="1465" height="596" alt="bicycle_data_warehouse-Page-2" src="https://github.com/user-attachments/assets/6df20193-9a6c-4c30-88bc-ffb5bc35a03d" />
+<img width="1465" height="596" alt="bicycle_data_warehouse-Page-2" src="https://github.com/user-attachments/assets/f8166833-d4c5-4dd5-b053-7df73b5d50de" />
+
 
 ---
 ## 📝🛢️Data mart
@@ -41,10 +42,10 @@ The data mart demonstrate the relationship of the Gold layer for business ready 
 --- 
 ## 😄😄About me 
 
-I'm an Industrial Engineering graduate with 4 years' experience in Quality Control within a regulated, high-throughput manufacturing environment — and I'm now transitioning into Data Science.
+I'm an Industrial Engineering graduate with 4 years' experience in Quality Control within a regulated, high-throughput manufacturing environment and I'm now transitioning into Data Science.
 ---
 ## 🔗🔗Connect With ME 
--__LinkedIn__: https://www.linkedin.com/in/tokelo-komane-480848200/
+- __LinkedIn__: https://www.linkedin.com/in/tokelo-komane-480848200/
 - __Portfolio__: https://github.com/Gotloloka/
  
 
