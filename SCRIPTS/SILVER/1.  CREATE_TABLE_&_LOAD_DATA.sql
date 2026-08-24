@@ -16,6 +16,7 @@ BEGIN
 			b.brand_id,
 			b.brand_name
 		FROM bronze.brands b) b; 
+		SET @endtime =  GETDATE();
 		PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@starttime,@endtime) as NVARCHAR)+'seconds';
 		PRINT '-----------------------------------------------------------------------------' ;
 
