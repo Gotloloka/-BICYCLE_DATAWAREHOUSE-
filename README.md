@@ -9,28 +9,28 @@ To analyses the data of Bicycle shop and uncover the key insights that can help 
   - Evaluate inventory levels and stock availability across stores.
   - Assess staff and store performance using sales-related metrics.
   - Present business insights through SQL queries and Python-based visualizations to support data-driven decision making.
---
+---
 ## 🚴‍♂️📷Project view 
 
---
+---
 ## 🚴‍♀️❯❯❯❯Project Structure 
 
---
+---
 ##  🗄️🗄️ Data Architecture
 
---
+---
 ## 🖧🛢 Data flow 
 
---
+---
 ## 📝🛢️Data mart
 
---
+---
 ## 🚀📚Key learnings
 
---
+---
 ## 😄😄About me 
 
---
+---
 🔗🔗Connect With ME 
  
 
