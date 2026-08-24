@@ -10,7 +10,8 @@ SELECT
 	p.gender_based,
 	p.model_year,
 	p.list_price,
-	s.quantity
+	s.quantity,
+	p.list_price*s.quantity AS stock_amount
 
 FROM silver.products p
 LEFT JOIN silver.brands b
