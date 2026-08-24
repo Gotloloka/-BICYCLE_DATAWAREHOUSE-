@@ -38,11 +38,12 @@ The data mart demonstrate the relationship of the Gold layer for business ready 
 - Medallion Architecture: from from Bronze layer which consider of only raw data to silver layer which the data are cleaned and standardized, lastly Gold layer which prepare for business ready.
 - Strengthened core SQL concepts like JOIN, GROUP BY, FILTER, DATE_TRUNC,  CASE WHEN , WINDOW FUNCTION, VIEWS, and PROCEDURE.
 - 
---- I
+--- 
 ## 😄😄About me 
+
 I'm an Industrial Engineering graduate with 4 years' experience in Quality Control within a regulated, high-throughput manufacturing environment — and I'm now transitioning into Data Science.
 ---
-##🔗🔗Connect With ME 
+## 🔗🔗Connect With ME 
 -__LinkedIn__: https://www.linkedin.com/in/tokelo-komane-480848200/
 - __Portfolio__: https://github.com/Gotloloka/
  
