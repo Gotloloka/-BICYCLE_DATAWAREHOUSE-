@@ -1,3 +1,4 @@
+CREATE OR ALTER PROCEDURE gold.load_br AS
 DROP TABLE IF EXISTS gold.business_report ;
 SELECT * INTO gold.business_report FROM (
 SELECT DISTINCT
@@ -64,18 +65,18 @@ SELECT DISTINCT
 		p.category_name, p.gender_based, p.model_year, p.list_price, o.order_date, 
 		o.require_date, o.shipped_date ) AS sold_qty,
 		i.discount,
-	SUM(i.sales_amount) OVER (PARTITION BY i.order_id,i.item_id, o.customer_fullname, o.staff_fullname, o.store_name, p.product_name, 
+	ROUND(SUM(i.sales_amount) OVER (PARTITION BY i.order_id,i.item_id, o.customer_fullname, o.staff_fullname, o.store_name, p.product_name, 
 		p.category_name, p.gender_based, p.model_year, p.list_price, o.order_date, 
-		o.require_date, o.shipped_date) AS sales_amount,
-	SUM(i.discount_amount) OVER( PARTITION BY i.order_id,i.item_id, o.customer_fullname, o.staff_fullname, o.store_name, p.product_name, 
+		o.require_date, o.shipped_date),2) AS sales_amount,
+	ROUND(SUM(i.discount_amount) OVER( PARTITION BY i.order_id,i.item_id, o.customer_fullname, o.staff_fullname, o.store_name, p.product_name, 
 		p.category_name, p.gender_based, p.model_year, p.list_price, o.order_date, 
-		o.require_date, o.shipped_date) as discount_amount,
-	SUM(i.sales_amount) OVER (PARTITION BY i.order_id,i.item_id, o.customer_fullname, o.staff_fullname, o.store_name, p.product_name, 
+		o.require_date, o.shipped_date),2) as discount_amount,
+	ROUND(SUM(i.sales_amount) OVER (PARTITION BY i.order_id,i.item_id, o.customer_fullname, o.staff_fullname, o.store_name, p.product_name, 
 		p.category_name, p.gender_based, p.model_year, p.list_price, o.order_date, 
 		o.require_date, o.shipped_date) -
 	SUM(i.discount_amount) OVER( PARTITION BY i.order_id,i.item_id, o.customer_fullname, o.staff_fullname, o.store_name, p.product_name, 
 		p.category_name, p.gender_based, p.model_year, p.list_price, o.order_date, 
-		o.require_date, o.shipped_date)  AS revenue_loss
+		o.require_date, o.shipped_date),2)  AS revenue_loss
 
 
 FROM gold.fact_order_items i
