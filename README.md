@@ -14,7 +14,21 @@ To analyses the data of Bicycle shop and uncover the key insights that can help 
   - Present business insights through SQL queries and Python-based visualizations to support data-driven decision making.
 ---
 ## 🚴‍♂️📷Project view 
+Project view This project involves:
 
+- __Data Architecture__: Designing a Modern Data Warehouse Medallion Architecture Bronze, Silver and Gold layers.
+- __ETL Pipelines__: Extracting, Transforming, and loading data from source systems into warehouse.
+- __Data Modeling__: Developing fact and dimension tables optimized for analytical quires.
+- __Analytics& Reporting__: Creating SQL-based reports and dashboards for actionable insights.
+
+  ----
+  This repository is an excellent resource for professionals and looking to showcase expertise in:
+- SQL Development
+- Data Architect
+- Data Engineering
+- ETL Pipeline Developer
+- Data modeling
+- Data science 
 ---
 ## 🚴‍♀️❯❯❯❯Project Structure 
  1. __Data Architecture__: Designing a Modern Data Warehouse Medallion Architecture Bronze, Silver and Gold layers.
