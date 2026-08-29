@@ -29,7 +29,7 @@ CREATE TABLE bronze.stores (
 	email  NVARCHAR(250),
 	street NVARCHAR(250),
 	city   NVARCHAR(250),
-	states NVARCHAR(250)
+	states NVARCHAR(250),
 	zip_code INT
 	);
 DROP TABLE IF EXISTS bronze.customers;
