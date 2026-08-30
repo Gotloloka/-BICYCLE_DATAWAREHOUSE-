@@ -69,4 +69,6 @@ SELECT
 	SUM( saved_amount) OVER( PARTITION BY customer_fullname, category_name) AS total_saved_amount,
 	SUM( bought_qty) OVER( PARTITION BY customer_fullname)  AS total_products
 FROM base_query)
-
+ SELECT
+ * 
+ FROM customer_aggregation 
