@@ -11,7 +11,7 @@ To analyses the data of Bicycle shop and uncover the key insights that can help 
   - Explore customer purchasing behavior and geographical distribution.
   - Evaluate inventory levels and stock availability across stores.
   - Assess staff and store performance using sales-related metrics.
-  - Present business insights through SQL queries and Python-based visualizations to support data-driven decision making.
+  - Present business insights through SQL queries  visualizations to support data-driven decision making.
 ---
 ## 🚴‍♂️📷Project view 
 Project view This project involves:
