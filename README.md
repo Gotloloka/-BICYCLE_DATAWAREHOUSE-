@@ -48,8 +48,7 @@ The data flow of the file from raw data into an insights data
 
 
 ---
-## 📝🛢️Data mart
-The data mart demonstrate the relationship of the Gold layer for business ready report.
+
 ---
 ## 🚀📚Key learnings
 - Building and query a structured bicycle dataset from scratch to build a medallion architecture
