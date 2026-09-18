@@ -58,10 +58,15 @@ The data flow of the file from raw data into an insights data
 - Strengthened core SQL concepts like JOIN, GROUP BY, FILTER, DATE_TRUNC,  CASE WHEN , WINDOW FUNCTION, VIEWS, and PROCEDURE.
   
 --- 
+
 ## 😄😄About me 
+
 I'm an Industrial Engineering graduate with 4 years' experience in Quality Control within a regulated, high-throughput manufacturing environment and I'm now transitioning into Data Science.
+
 ---
+
 ## 🔗🔗Connect With ME 
+
 - __LinkedIn__: https://www.linkedin.com/in/tokelo-komane-480848200/
 - __Portfolio__: https://github.com/Gotloloka/
  
